@@ -2,7 +2,7 @@ package ej16t3;
 
 /**
  *
- * @author alumno
+ * @author Sergio
  */
 public class EJ16T3 {
 
