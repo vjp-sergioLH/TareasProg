@@ -21,7 +21,7 @@ Scanner scanner = new Scanner(System.in);
 
         do {
             // Mostramos el menú
-            System.out.println("\n--- Menú ---");
+            System.out.println("--- Menú ---");
             System.out.println("1. Sumar");
             System.out.println("2. Restar");
             System.out.println("3. Multiplicar");
