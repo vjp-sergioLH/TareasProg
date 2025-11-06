@@ -25,7 +25,7 @@ public class EJ12T4 {
         do {            
          pedirNumero = contrasenia(0);
          enviar = contrasenio(pedirNumero);
-        } while { (ped);
+        } while { (pedirNumero == 1234);
         
      }
 }
