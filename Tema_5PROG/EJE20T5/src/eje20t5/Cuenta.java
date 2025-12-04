@@ -1,0 +1,46 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package eje20t5;
+
+/**
+ *
+ * @author alumno
+ */
+public class Cuenta {
+    private float saldo;
+    
+    public Cuenta(){
+        saldo = 0;
+    }
+    
+    public Cuenta(float s){
+        saldo = s;
+    }
+
+    public float getSueldo() {
+        return saldo;
+    }
+
+    public void setSueldo(float saldo) {
+        this.saldo = saldo;
+    }
+
+    public void ingresar (float c){
+        
+        saldo += c;
+                
+    }
+    public void extraer (float c){
+        
+        saldo -= c;
+    }
+    
+    @Override
+    public String toString() {
+        return "Cuenta{" + "saldo=" + saldo + '}';
+    }
+    
+    
+}
