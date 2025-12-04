@@ -8,6 +8,19 @@ package ej4t6;
  *
  * @author alumno
  */
-public abstract class Felinos extends Canidos {
+public abstract class Felinos extends Animal {
+    public Felinos(){
+        super();
+    }
+    
+    public Felinos(String nombre, byte edad, float peso){
+        super(nombre, edad, peso);
+    }
+
+    @Override
+    public String toString() {
+        return "Felinos{" + '}';
+    }
+    
     
 }

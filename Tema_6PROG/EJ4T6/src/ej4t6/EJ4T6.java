@@ -10,11 +10,10 @@ package ej4t6;
  */
 public class EJ4T6 {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        Perros perro = new Perros("Lucas", 5, 7);
+        
     }
     
 }

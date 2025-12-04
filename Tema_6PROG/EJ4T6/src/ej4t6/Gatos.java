@@ -8,30 +8,29 @@ package ej4t6;
  *
  * @author alumno
  */
-public class Perros extends Canidos {
-    public Perros(){
+public class Gatos extends Felinos{
+    public Gatos(){
         super();
     }
     
-    public Perros(String nombre, byte edad, float peso){
+    public Gatos(String nombre, byte edad, float peso){
         super(nombre, edad, peso);
     }
     
     @Override
     public String sonidoAnimal(){
-        return "EL perro tiene de sonido el Ladrido";
+        return "El Gato tiene de sonido el Maullido";
     }
     @Override
     public String tipoAlimentacion(){
-        return "El perro es Carnivoro";
+        return "El Gato se alimenta de Ratones";
     }
     @Override
     public String tipoHabitat(){
-        return "El perro es Domestico"; 
+        return "El Gato es domestico"; 
     }
     @Override
     public String nombreCientifico(){
-        return "El nombre cientifico del perro es: Canis lupus familiaris";
+        return "El nombre cientifico del Lobo es: Felis silvestris catus";
     }
 }
-    

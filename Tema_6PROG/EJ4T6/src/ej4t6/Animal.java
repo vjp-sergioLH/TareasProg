@@ -11,7 +11,7 @@ package ej4t6;
 public abstract class Animal {
 
     private String nombre;
-    private byte edad;
+    private int edad;
     private float peso;
     
     public Animal(){
@@ -20,7 +20,7 @@ public abstract class Animal {
         peso=0;
     }
 
-    public Animal(String nombre, byte edad, float peso){
+    public Animal(String nombre, int edad, float peso){
         this.nombre= nombre;
         this.edad= edad;
         this.peso= peso;
@@ -33,11 +33,11 @@ public abstract class Animal {
         this.nombre = nombre;
     }
 
-    public byte getEdad() {
+    public int getEdad() {
         return edad;
     }
 
-    public void setEdad(byte edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
 
