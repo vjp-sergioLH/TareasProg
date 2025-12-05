@@ -8,12 +8,12 @@ package ej4t6;
  *
  * @author alumno
  */
-public abstract class Leones extends Felinos {
+public class Leones extends Felinos {
     public Leones(){
         super();
     }
     
-    public Leones(String nombre, byte edad, float peso){
+    public Leones(String nombre, int edad, float peso){
         super(nombre, edad, peso);
     }
     
@@ -33,4 +33,12 @@ public abstract class Leones extends Felinos {
     public String nombreCientifico(){
         return "El nombre cientifico del Lobo es: Panthera leo";
     }
+    @Override
+    public String toString() {
+        return super.toString() + "\n" +
+                sonidoAnimal() + "\n" 
+                + tipoAlimentacion() + "\n" 
+                + tipoHabitat() + "\n"
+                + nombreCientifico();
+}
 }

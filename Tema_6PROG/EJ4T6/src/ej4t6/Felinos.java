@@ -13,13 +13,13 @@ public abstract class Felinos extends Animal {
         super();
     }
     
-    public Felinos(String nombre, byte edad, float peso){
+    public Felinos(String nombre, int edad, float peso){
         super(nombre, edad, peso);
     }
 
     @Override
     public String toString() {
-        return "Felinos{" + '}';
+        return super.toString();
     }
     
     

@@ -13,7 +13,7 @@ public class Perros extends Canidos {
         super();
     }
     
-    public Perros(String nombre, byte edad, float peso){
+    public Perros(String nombre, int edad, float peso){
         super(nombre, edad, peso);
     }
     
@@ -33,5 +33,16 @@ public class Perros extends Canidos {
     public String nombreCientifico(){
         return "El nombre cientifico del perro es: Canis lupus familiaris";
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\n" +
+                sonidoAnimal() + "\n" 
+                + tipoAlimentacion() + "\n" 
+                + tipoHabitat() + "\n"
+                + nombreCientifico();
+    }
+    
+    
 }
     

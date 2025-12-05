@@ -13,7 +13,7 @@ public class Lobos extends Perros {
         super();
     }
     
-    public Lobos(String nombre, byte edad, float peso){
+    public Lobos(String nombre, int edad, float peso){
         super(nombre, edad, peso);
     }
     
@@ -33,4 +33,12 @@ public class Lobos extends Perros {
     public String nombreCientifico(){
         return "El nombre cientifico del Lobo es: Canis lupus";
     }
+    @Override
+    public String toString() {
+        return super.toString() + "\n" +
+                sonidoAnimal() + "\n" 
+                + tipoAlimentacion() + "\n" 
+                + tipoHabitat() + "\n"
+                + nombreCientifico();
+}
 }
