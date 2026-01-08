@@ -38,4 +38,8 @@ public class EJ2T7 {
             
         }
     }
+    
+    public static void intercambiarVectores(String[] args) {
+        
+    }
 }
