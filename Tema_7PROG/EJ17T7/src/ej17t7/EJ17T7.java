@@ -7,8 +7,8 @@ import java.util.Random;
  * @author Sergio Lopez Hernandez
  */
 public class EJ17T7 {
-
-// Crearmos un array de 10 numeros aleatorios entre el 0 y 9
+    
+    // Crearmos un array de 10 numeros aleatorios entre el 0 y 9
     public static int[] crearArray() {
 
         // Creamos el array con sus 10 posiciones
@@ -41,8 +41,7 @@ public class EJ17T7 {
 
         for (int i = 0; i < 9; i++) {
             for (int j = i + 1; j < 10; j++) {
-                // Si el número que tenemos en la izquierda es menor, se intercambian
-                if (array[i] < array[j]) { // Usamos el metodo de la burbuja para intercambiar posiciones
+                if (array[i] < array[j]) { // Si el número que tenemos en la izquierda es menor, se intercambian, para dar paso al metodo burbuja y que se ordenen
                     int aux = array[i];
                     array[i] = array[j];
                     array[j] = aux;
