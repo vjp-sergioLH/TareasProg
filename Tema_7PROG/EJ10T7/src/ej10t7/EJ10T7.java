@@ -6,7 +6,7 @@ package ej10t7;
 
 /**
  *
- * @author alumno
+ * @author Sergio
  * Menciono que hice los ejercicios con un compañero de clase ya que se me atragantaron mucho los ejercicios y necesitaba ayuda
  */
 public class EJ10T7 {

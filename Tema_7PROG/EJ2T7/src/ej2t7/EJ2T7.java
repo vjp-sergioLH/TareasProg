@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author alumno
+ * @author Sergio
  */
 public class EJ2T7 {
 
