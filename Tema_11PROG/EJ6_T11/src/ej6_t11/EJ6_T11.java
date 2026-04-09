@@ -13,7 +13,7 @@ public class EJ6_T11 {
 
     public static void main(String[] args) {
 
-        Campania campania = new Campania("Campania de donaciones");
+        Campania campania = new Campania("Campania de donaciones"); // Creamos un objeto campaña para almacenar
         int opcion;
 
         do {
@@ -29,37 +29,37 @@ public class EJ6_T11 {
             opcion = entrada.nextInt();
             entrada.nextLine();
 
-            switch (opcion) {
+            switch (opcion) { // Y creamos un switch con cases para cada opcion.
                 case 1 -> {
-                    System.out.println("Nombre del donante:");
+                    System.out.println("Nombre del donante:"); // Aqui nos pide y almacena los datos del donante y su donacion en cantidad
                     String nombre = entrada.nextLine();
                     System.out.println("Cantidad donada:");
                     double cantidad = entrada.nextDouble();
                     entrada.nextLine();
 
-                    campania.addDonacion(new Donacion(nombre, cantidad));
+                    campania.addDonacion(new Donacion(nombre, cantidad)); //Levandola al apartado del add
                 }
 
                 case 2 ->
-                    campania.mostrarDonaciones();
+                    campania.mostrarDonaciones(); //Aqui nos redirecciona
 
                 case 3 -> {
-                    System.out.println("Introduce el nombre del donante:");
+                    System.out.println("Introduce el nombre del donante:"); // Aqui solo nos pide el nombre y lo almacena
                     String nombre = entrada.nextLine();
                     campania.mostrarPorNombre(nombre);
                 }
 
                 case 4 ->
-                    System.out.println("Numero de donaciones: " + campania.getNumeroDonaciones());
+                    System.out.println("Numero de donaciones: " + campania.getNumeroDonaciones()); // Cuenta el numero de donaciones y lo muestra por pantalla
 
                 case 5 ->
-                    System.out.println("Total recaudado: " + campania.getTotalRecaudado());
+                    System.out.println("Total recaudado: " + campania.getTotalRecaudado()); // No smuestra cuanto dinero fue recaudado
 
                 case 6 ->
-                    System.out.println("Saliendo...");
+                    System.out.println("Saliendo..."); // Salimos del menu
 
                 default ->
-                    System.out.println("Opcion no valida");
+                    System.out.println("Opcion no valida"); // Opcion no elegida dentro de los limites
             }
 
         } while (opcion != 6);

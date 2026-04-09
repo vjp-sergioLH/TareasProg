@@ -10,14 +10,14 @@ public class EJ8_T11 {
  * @author Sergio Lopez Hdez
  */
     
-    static Scanner entrada = new Scanner(System.in);
+    static Scanner entrada = new Scanner(System.in); // Creamos un escanare y un arrayList
     static ArrayList<Ciudad> ciudades = new ArrayList<>();
 
     public static void main(String[] args) {
 
-        int opcion;
+        int opcion; // Creamos una variable int opcion para la eleccion sea almacenada en el
 
-        do {
+        do { // Creamos un menu para cada opcion
             System.out.println("Menu de gestion de sedes");
             System.out.println("1. Anadir ciudad");
             System.out.println("2. Mostrar ciudades y sedes");
@@ -31,7 +31,7 @@ public class EJ8_T11 {
             opcion = entrada.nextInt();
             entrada.nextLine();
 
-            switch (opcion) {
+            switch (opcion) { // Creamos un case para cada opcion 
                 case 1 ->
                     anadirCiudad();
                 case 2 ->
@@ -54,13 +54,13 @@ public class EJ8_T11 {
     }
 
     public static void anadirCiudad() {
-        System.out.println("Nombre de la ciudad:");
-        String nombre = entrada.nextLine();
+        System.out.println("Nombre de la ciudad:"); // Nos pide el nombre de la ciudad
+        String nombre = entrada.nextLine(); // Y la almacena
 
         Ciudad c = new Ciudad(nombre);
 
         String seguir;
-        do {
+        do { // Creamos un do, para poder añadir una sede y sus datos
             System.out.println("Nombre de la sede:");
             String sedeNombre = entrada.nextLine();
             System.out.println("Ingresos anuales:");
@@ -69,10 +69,10 @@ public class EJ8_T11 {
 
             c.addSede(new Sede(sedeNombre, ingresos));
 
-            System.out.println("Deseas anadir otra sede? (s/n)");
+            System.out.println("Deseas anadir otra sede? (s/n)");// Creamos una opcion por si quiere crear mas sedes
             seguir = entrada.nextLine();
 
-        } while (seguir.equalsIgnoreCase("s"));
+        } while (seguir.equalsIgnoreCase("s")); // Si no entrega un si volveremos denuevo al principio del metodo
 
         ciudades.add(c);
         System.out.println("Ciudad anadida correctamente.");
@@ -81,7 +81,7 @@ public class EJ8_T11 {
     public static void mostrarCiudades() {
         if (ciudades.isEmpty()) {
             System.out.println("No hay ciudades registradas.");
-            return;
+            return; // Si el metodo esta vacio directamente no nos muestra nada, mas que un aviso
         }
 
         for (Ciudad c : ciudades) {
@@ -90,7 +90,7 @@ public class EJ8_T11 {
     }
 
     public static void sedesMasIngreMedia() {
-        double total = 0;
+        double total = 0; //Buscamos la sede con mas ingresos de media
         int contador = 0;
 
         for (Ciudad c : ciudades) {
@@ -101,14 +101,14 @@ public class EJ8_T11 {
         }
 
         if (contador == 0) {
-            System.out.println("No hay sedes registradas.");
+            System.out.println("No hay sedes registradas."); // Si no hay nos avisa por pantalla
             return;
         }
 
-        double media = total / contador;
+        double media = total / contador; // Aqui solucionamos la media
 
-        System.out.println("Media de ingresos: " + media);
-        System.out.println("Sedes con ingresos superiores a la media:");
+        System.out.println("Media de ingresos: " + media); // Nos muestra la media por pantalla
+        System.out.println("Sedes con ingresos superiores a la media:"); // Nos muestra los mayores ingresos a la media
 
         for (Ciudad c : ciudades) {
             for (Sede s : c.getSedes()) {
